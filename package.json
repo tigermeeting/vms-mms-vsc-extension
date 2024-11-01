@@ -3,12 +3,23 @@
   "displayName": "VMS MMS",
   "description": "Syntax highlighting for Makefile Macro Syntax (MMS) language",
   "version": "0.0.1",
+  "publisher": "Tigermeeting",
+  "icon": "images/mms.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tigermeeting/vms-mms-vsc-extension.git"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "mms",
+    "openvms",
+    "vms"
+  ],
   "engines": {
     "vscode": "^1.95.0"
   },
-  "categories": [
-    "Other"
-  ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
@@ -30,6 +41,12 @@
         "language": "mms",
         "scopeName": "source.mms",
         "path": "./syntaxes/mms.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "mms",
+        "path": "./mms-snippets.json"
       }
     ]
   },

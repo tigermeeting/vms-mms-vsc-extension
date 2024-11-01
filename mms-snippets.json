@@ -1,0 +1,26 @@
+{
+	"Generate if statement": {
+		"prefix": ".IF ",
+		"body": [
+			"\\.IF $1",
+			"\\.THEN",
+            "\\$2",
+			"\\.ELSE",
+			"\\$0",
+			"\\.ENDIF"
+		],
+		"description": "Generate if structure"
+	},
+	"Generate ifdef statement": {
+		"prefix": ".IFDEF ",
+		"body": [
+			"\\.IFDEF $1",
+			"\\.THEN",
+			"\\ $2",
+			"\\.ELSE",
+			"\\ $0",
+			"\\.ENDIF"
+		],
+		"description": "Generate ifdef structure"
+	}
+}
