@@ -1,0 +1,72 @@
+{
+	"name": "Makefile Macro Syntax",
+	"scopeName": "source.mms",
+	"fileTypes": [
+		"mms"
+	],
+    "repository": {},
+	"patterns": [
+		{
+			"name": "comment.line.number-sign.mms",
+			"match": "#.*$"
+		},
+		{
+			"name": "keyword.control.mms",
+			"match": "\\b(if|else|endif|for|endfor|include|define|endef|override|export|unexport|private|vpath|ifdef|ifndef|ifeq|ifneq)\\b"
+		},
+		{
+			"name": "variable.other.mms",
+			"match": "\\$\\([a-zA-Z_][a-zA-Z0-9_]*\\)"
+		},
+		{
+			"name": "variable.parameter.mms",
+			"match": "\\$[@%<^?+|*]"
+		},
+		{
+			"name": "string.quoted.double.mms",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.mms",
+					"match": "\\\\."
+				}
+			]
+		},
+		{
+			"name": "constant.numeric.mms",
+			"match": "\\b\\d+\\b"
+		},
+		{
+			"name": "keyword.operator.mms",
+			"match": "\\b(:=|=|\\+=|\\?=|::=)\\b"
+		},
+		{
+			"name": "support.function.mms",
+			"match": "\\b(subst|patsubst|strip|findstring|filter|filter-out|sort|word|words|wordlist|firstword|lastword|shell|wildcard|error|warning|info|foreach|call|eval|origin|flavor)\\b"
+		},
+		{
+			"name": "entity.name.function.target.mms",
+			"match": "^[a-zA-Z0-9_\\-]+\\s*:\\s*(\\$\\([a-zA-Z_][a-zA-Z0-9_]*\\)|[a-zA-Z0-9_\\-]+)*"
+		},
+		{
+			"name": "punctuation.separator.key-value.mms",
+			"match": ":"
+		},
+		{
+			"name": "meta.scope.prerequisites.mms",
+			"begin": ":",
+			"end": "$",
+			"patterns": [
+				{
+					"name": "variable.other.prerequisite.mms",
+					"match": "\\$\\([a-zA-Z_][a-zA-Z0-9_]*\\)"
+				},
+				{
+					"name": "string.unquoted.prerequisite.mms",
+					"match": "[a-zA-Z0-9_\\-]+"
+				}
+			]
+		}
+	]
+}
