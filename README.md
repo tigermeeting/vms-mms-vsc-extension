@@ -1,6 +1,6 @@
 MMS is a utility in OpenVMS that automates the building of software systems. It uses description files (similar to makefiles) to specify the components of the system and their dependencies. MMS reads these files to determine what needs to be built and in what order. 
 
-Makefiles in OpenVMS, particularly when using tools like MMS and MMK, utilize macros to define variables and rules for building software. These macros can represent file names, compiler options, or any other text that needs to be reused throughout the makefile
+Makefiles (.MMS extension) in OpenVMS, particularly when using tools like MMS and MMK, utilize macros to define variables and rules for building software. These macros can represent file names, compiler options, or any other text that needs to be reused throughout the makefile
 
 This extension is for Makefile Macro Syntax used for Module Management System for OpenVMS (MMS).
 
@@ -22,7 +22,7 @@ Snippet Shortcut      | Purpose
 '.IF'                 | Generate an IF-THEN-ELSE-ENDIF statement block
 '.IFDEF'              | Genetate an IFDEF-THEN-ELSE-ENDIF statement block
 
-\!\[example\]\(images/sample.png\)
+\!\[Example\]\(images/sample.png\)
 
 ## Requirements
 
