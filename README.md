@@ -22,7 +22,12 @@ Snippet Shortcut      | Purpose
 '.IF'                 | Generate an IF-THEN-ELSE-ENDIF statement block
 '.IFDEF'              | Genetate an IFDEF-THEN-ELSE-ENDIF statement block
 
-\!\[Example\]\(images/sample.png\)
+
+Example:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/tigermeeting/vms-mms-vsc-extension/main/images/sample.png">
+</p>
 
 ## Requirements
 
