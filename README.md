@@ -47,7 +47,12 @@ None.
 
 Initial release.
 
+### 1.0.1
+
+Improve the compatibility - set vscode requirement to 1.50.0
+
 ---
+Report bugs and create pull requests at the github repository.
 Send bugs to Zoltan Arpadffy <zoli@tigermeeting.app>
 
 **Enjoy!**
